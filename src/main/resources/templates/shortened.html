@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layout.html}">
+<head>
+<title>Getting Started: Serving Web Content</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+	<section layout:fragment="custom-content">
+
+
+
+		<div class="container">
+
+
+			<div class="row">
+
+
+				<div class="col">
+				<h1>Encurtador de URL</h1>
+				
+				
+				</div>
+
+
+			</div>
+
+
+
+			<div class="row">
+
+				<div class="col align-self-center">
+
+
+
+
+					<form action="#" th:action="@{/shorten}" th:object="${url}"
+						method="get">
+
+						<p th:text="${url.resultUrl}">A url encurtada é:</p>
+
+						<div class="form-group text-center">
+							<label for="exampleInputEmail1">URL you want to shorten:</label>
+							<input type="text" th:field="${url.originalUrl}"
+								class="form-control" id="inputUrl"
+								placeholder="Type the URL here.">
+
+
+							<button type="submit" class="btn btn-primary btn-lg mt-5">SHORTEN!</button>
+						</div>
+					</form>
+
+				</div>
+
+			</div>
+		</div>
+
+
+	</section>
+
+
+</body>
+</html>
