@@ -1,14 +1,14 @@
-package com.example.demo.model;
+package com.lucascerqueira.encurtaurl.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Url {
-	
+
 	private String originalUrl;
-	
+
 	@JsonProperty("result_url")
 	private String resultUrl;
-	
+
 	private String error;
 
 	public String getOriginalUrl() {
@@ -41,12 +41,9 @@ public class Url {
 		this.resultUrl = resultUrl;
 		this.error = error;
 	}
-	
+
 	public Url() {
-		
+
 	}
-	
-	
-	
 
 }
