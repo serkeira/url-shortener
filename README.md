@@ -3,6 +3,11 @@ Encurtador de Url feito em Java (Spring Boot)
 
 Formato aceito: "http://wwww.google.com"
 
+Próximas implementações:
+- Validação do input
+- Tratamento de exceções
+- Histórico de URLs
+
 Por Lucas Cerqueira https://www.linkedin.com/in/cerqueiralucas/
 
 
